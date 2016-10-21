@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		525C3F851DBAE055007F60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3F841DBAE055007F60A7 /* AppDelegate.swift */; };
-		525C3F871DBAE055007F60A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3F861DBAE055007F60A7 /* ViewController.swift */; };
-		525C3F8A1DBAE055007F60A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3F881DBAE055007F60A7 /* Main.storyboard */; };
-		525C3F8C1DBAE055007F60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C3F8B1DBAE055007F60A7 /* Assets.xcassets */; };
-		525C3F8F1DBAE055007F60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3F8D1DBAE055007F60A7 /* LaunchScreen.storyboard */; };
 		525C3F9A1DBAE055007F60A7 /* TDDTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */; };
+		525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */; };
+		525C3FB01DBAE09F007F60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA61DBAE09F007F60A7 /* Assets.xcassets */; };
+		525C3FB11DBAE09F007F60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */; };
+		525C3FB21DBAE09F007F60A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA91DBAE09F007F60A7 /* Main.storyboard */; };
+		525C3FBA1DBAE143007F60A7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3FB91DBAE143007F60A7 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +27,15 @@
 
 /* Begin PBXFileReference section */
 		525C3F811DBAE055007F60A7 /* TDDTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		525C3F841DBAE055007F60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		525C3F861DBAE055007F60A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		525C3F891DBAE055007F60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		525C3F8B1DBAE055007F60A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		525C3F8E1DBAE055007F60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		525C3F901DBAE055007F60A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525C3F951DBAE055007F60A7 /* TDDTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDTimerTests.swift; sourceTree = "<group>"; };
-		525C3F9B1DBAE055007F60A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		525C3FA61DBAE09F007F60A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		525C3FA81DBAE09F007F60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		525C3FAA1DBAE09F007F60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		525C3FAB1DBAE09F007F60A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525C3FB51DBAE0C8007F60A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525C3FB91DBAE143007F60A7 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,10 @@
 		525C3F831DBAE055007F60A7 /* TDDTimer */ = {
 			isa = PBXGroup;
 			children = (
-				525C3F841DBAE055007F60A7 /* AppDelegate.swift */,
-				525C3F861DBAE055007F60A7 /* ViewController.swift */,
-				525C3F881DBAE055007F60A7 /* Main.storyboard */,
-				525C3F8B1DBAE055007F60A7 /* Assets.xcassets */,
-				525C3F8D1DBAE055007F60A7 /* LaunchScreen.storyboard */,
-				525C3F901DBAE055007F60A7 /* Info.plist */,
+				525C3FA41DBAE09F007F60A7 /* Application */,
+				525C3FAC1DBAE09F007F60A7 /* Components */,
+				525C3FAD1DBAE09F007F60A7 /* Frameworks */,
+				525C3FAE1DBAE09F007F60A7 /* UI */,
 			);
 			path = TDDTimer;
 			sourceTree = "<group>";
@@ -90,10 +88,68 @@
 		525C3F981DBAE055007F60A7 /* TDDTimerTests */ = {
 			isa = PBXGroup;
 			children = (
+				525C3FB41DBAE0C8007F60A7 /* Application */,
+				525C3FB61DBAE0C8007F60A7 /* Components */,
+				525C3FB71DBAE0C8007F60A7 /* UI */,
 				525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */,
-				525C3F9B1DBAE055007F60A7 /* Info.plist */,
 			);
 			path = TDDTimerTests;
+			sourceTree = "<group>";
+		};
+		525C3FA41DBAE09F007F60A7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */,
+				525C3FA61DBAE09F007F60A7 /* Assets.xcassets */,
+				525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */,
+				525C3FA91DBAE09F007F60A7 /* Main.storyboard */,
+				525C3FAB1DBAE09F007F60A7 /* Info.plist */,
+				525C3FB91DBAE143007F60A7 /* main.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		525C3FAC1DBAE09F007F60A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		525C3FAD1DBAE09F007F60A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		525C3FAE1DBAE09F007F60A7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		525C3FB41DBAE0C8007F60A7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				525C3FB51DBAE0C8007F60A7 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		525C3FB61DBAE0C8007F60A7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		525C3FB71DBAE0C8007F60A7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +234,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				525C3F8F1DBAE055007F60A7 /* LaunchScreen.storyboard in Resources */,
-				525C3F8C1DBAE055007F60A7 /* Assets.xcassets in Resources */,
-				525C3F8A1DBAE055007F60A7 /* Main.storyboard in Resources */,
+				525C3FB21DBAE09F007F60A7 /* Main.storyboard in Resources */,
+				525C3FB01DBAE09F007F60A7 /* Assets.xcassets in Resources */,
+				525C3FB11DBAE09F007F60A7 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				525C3F871DBAE055007F60A7 /* ViewController.swift in Sources */,
-				525C3F851DBAE055007F60A7 /* AppDelegate.swift in Sources */,
+				525C3FBA1DBAE143007F60A7 /* main.swift in Sources */,
+				525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,20 +278,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		525C3F881DBAE055007F60A7 /* Main.storyboard */ = {
+		525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				525C3F891DBAE055007F60A7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		525C3F8D1DBAE055007F60A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				525C3F8E1DBAE055007F60A7 /* Base */,
+				525C3FA81DBAE09F007F60A7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		525C3FA91DBAE09F007F60A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525C3FAA1DBAE09F007F60A7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,11 +392,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TDDTimer/Info.plist;
+				INFOPLIST_FILE = TDDTimer/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -348,11 +404,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TDDTimer/Info.plist;
+				INFOPLIST_FILE = TDDTimer/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -361,11 +417,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TDDTimerTests/Info.plist;
+				INFOPLIST_FILE = TDDTimerTests/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDTimer.app/TDDTimer";
 			};
 			name = Debug;
@@ -375,11 +431,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TDDTimerTests/Info.plist;
+				INFOPLIST_FILE = TDDTimerTests/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDTimer.app/TDDTimer";
 			};
 			name = Release;
