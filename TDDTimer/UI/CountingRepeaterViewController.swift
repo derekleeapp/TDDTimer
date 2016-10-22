@@ -29,7 +29,7 @@ class CountingRepeaterViewController: UIViewController {
         addConstraints()
         configureSubviews()
 
-        repeater.start {
+        repeater.start(0) {
             // Logic for updating the UILabel
         }
     }
