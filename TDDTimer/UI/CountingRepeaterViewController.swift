@@ -29,7 +29,9 @@ class CountingRepeaterViewController: UIViewController {
         addConstraints()
         configureSubviews()
 
-        repeater.start(nil)
+        repeater.start {
+            // Logic for updating the UILabel
+        }
     }
 
     override func viewWillDisappear(animated: Bool) {
