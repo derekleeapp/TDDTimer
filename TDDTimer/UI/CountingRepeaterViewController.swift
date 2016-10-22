@@ -18,6 +18,8 @@ class CountingRepeaterViewController: UIViewController {
     // MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        repeater.start()
     }
 
 }
