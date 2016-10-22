@@ -20,6 +20,7 @@
 		52902BE61DBAEC6400055450 /* CountingRepeaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */; };
 		52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE81DBAEC8F00055450 /* FakeRepeater.swift */; };
 		52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */; };
+		52902BEE1DBAF17500055450 /* CustomMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BED1DBAF17500055450 /* CustomMatchers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingRepeaterViewController.swift; sourceTree = "<group>"; };
 		52902BE81DBAEC8F00055450 /* FakeRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeRepeater.swift; sourceTree = "<group>"; };
 		52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRepeater.swift; sourceTree = "<group>"; };
+		52902BED1DBAF17500055450 /* CustomMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMatchers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				525C3FB61DBAE0C8007F60A7 /* Components */,
 				525C3FC31DBAE7F5007F60A7 /* Frameworks */,
 				525C3FB71DBAE0C8007F60A7 /* UI */,
+				52902BED1DBAF17500055450 /* CustomMatchers.swift */,
 			);
 			path = TDDTimerTests;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52902BEE1DBAF17500055450 /* CustomMatchers.swift in Sources */,
 				52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */,
 				52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */,
 			);

@@ -18,6 +18,11 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                 self.prepareViewControllerForDisplay(countingRepeaterVC)
             }
 
+            describe("view elements") {
+                it("displays a single digit on the screen") {
+                    expect(countingRepeaterVC).to(containLabelWithText("1"))
+                }
+            }
             it("starts the repeater when the view controller loads") {
                 expect(fakeRepeater.start_wasCalled).to(beTrue())
             }
