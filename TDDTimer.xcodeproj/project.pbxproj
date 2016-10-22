@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523BA9A21DBB18A3009788CF /* DefaultRepeaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BA9A11DBB18A3009788CF /* DefaultRepeaterTest.swift */; };
+		523BA9A41DBB50F4009788CF /* ExtensionsForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BA9A31DBB50F4009788CF /* ExtensionsForTest.swift */; };
 		525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */; };
 		525C3FB01DBAE09F007F60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA61DBAE09F007F60A7 /* Assets.xcassets */; };
 		525C3FB11DBAE09F007F60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */; };
@@ -49,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		523BA9A11DBB18A3009788CF /* DefaultRepeaterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRepeaterTest.swift; sourceTree = "<group>"; };
+		523BA9A31DBB50F4009788CF /* ExtensionsForTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsForTest.swift; sourceTree = "<group>"; };
 		525C3F811DBAE055007F60A7 /* TDDTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3F951DBAE055007F60A7 /* TDDTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				52902BE71DBAEC8800055450 /* Repeater */,
+				523BA9A31DBB50F4009788CF /* ExtensionsForTest.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 		52902BE71DBAEC8800055450 /* Repeater */ = {
 			isa = PBXGroup;
 			children = (
+				523BA9A11DBB18A3009788CF /* DefaultRepeaterTest.swift */,
 				52902BE81DBAEC8F00055450 /* FakeRepeater.swift */,
 			);
 			path = Repeater;
@@ -348,7 +354,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				52902BEE1DBAF17500055450 /* CustomMatchers.swift in Sources */,
+				523BA9A21DBB18A3009788CF /* DefaultRepeaterTest.swift in Sources */,
 				52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */,
+				523BA9A41DBB50F4009788CF /* ExtensionsForTest.swift in Sources */,
 				52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
