@@ -22,4 +22,9 @@ class CountingRepeaterViewController: UIViewController {
         repeater.start()
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        repeater.stop()
+    }
 }
