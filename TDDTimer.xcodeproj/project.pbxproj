@@ -12,6 +12,11 @@
 		525C3FB01DBAE09F007F60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA61DBAE09F007F60A7 /* Assets.xcassets */; };
 		525C3FB11DBAE09F007F60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */; };
 		525C3FBA1DBAE143007F60A7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3FB91DBAE143007F60A7 /* main.swift */; };
+		525C3FBD1DBAE6D6007F60A7 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525C3FBC1DBAE6D6007F60A7 /* PureLayout.framework */; };
+		525C3FC01DBAE766007F60A7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525C3FBF1DBAE766007F60A7 /* Nimble.framework */; };
+		525C3FC21DBAE7D5007F60A7 /* Nimble.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 525C3FBF1DBAE766007F60A7 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		525C3FC61DBAE812007F60A7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525C3FC51DBAE812007F60A7 /* Quick.framework */; };
+		525C3FC71DBAE818007F60A7 /* Quick.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 525C3FC51DBAE812007F60A7 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +29,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		525C3FC11DBAE7B6007F60A7 /* Carthage: Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				525C3FC71DBAE818007F60A7 /* Quick.framework in Carthage: Copy Files */,
+				525C3FC21DBAE7D5007F60A7 /* Nimble.framework in Carthage: Copy Files */,
+			);
+			name = "Carthage: Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		525C3F811DBAE055007F60A7 /* TDDTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3F951DBAE055007F60A7 /* TDDTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +54,9 @@
 		525C3FAB1DBAE09F007F60A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525C3FB51DBAE0C8007F60A7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525C3FB91DBAE143007F60A7 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		525C3FBC1DBAE6D6007F60A7 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = ../../Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
+		525C3FBF1DBAE766007F60A7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		525C3FC51DBAE812007F60A7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525C3FBD1DBAE6D6007F60A7 /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525C3FC61DBAE812007F60A7 /* Quick.framework in Frameworks */,
+				525C3FC01DBAE766007F60A7 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +114,9 @@
 			children = (
 				525C3FB41DBAE0C8007F60A7 /* Application */,
 				525C3FB61DBAE0C8007F60A7 /* Components */,
-				525C3FB71DBAE0C8007F60A7 /* UI */,
+				525C3FC31DBAE7F5007F60A7 /* Frameworks */,
 				525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */,
+				525C3FB71DBAE0C8007F60A7 /* UI */,
 			);
 			path = TDDTimerTests;
 			sourceTree = "<group>";
@@ -116,6 +143,7 @@
 		525C3FAD1DBAE09F007F60A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				525C3FBC1DBAE6D6007F60A7 /* PureLayout.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -149,6 +177,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		525C3FC31DBAE7F5007F60A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				525C3FBF1DBAE766007F60A7 /* Nimble.framework */,
+				525C3FC51DBAE812007F60A7 /* Quick.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +196,7 @@
 				525C3F7D1DBAE055007F60A7 /* Sources */,
 				525C3F7E1DBAE055007F60A7 /* Frameworks */,
 				525C3F7F1DBAE055007F60A7 /* Resources */,
+				525C3FBE1DBAE6E8007F60A7 /* Carthage: Run Script */,
 			);
 			buildRules = (
 			);
@@ -176,6 +214,7 @@
 				525C3F911DBAE055007F60A7 /* Sources */,
 				525C3F921DBAE055007F60A7 /* Frameworks */,
 				525C3F931DBAE055007F60A7 /* Resources */,
+				525C3FC11DBAE7B6007F60A7 /* Carthage: Copy Files */,
 			);
 			buildRules = (
 			);
@@ -244,6 +283,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		525C3FBE1DBAE6E8007F60A7 /* Carthage: Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+			);
+			name = "Carthage: Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		525C3F7D1DBAE055007F60A7 /* Sources */ = {
@@ -380,6 +437,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TDDTimer/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimer;
@@ -392,6 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TDDTimer/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimer;
@@ -405,6 +470,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TDDTimerTests/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;
@@ -419,6 +488,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TDDTimerTests/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;

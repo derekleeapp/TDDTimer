@@ -1,12 +1,17 @@
-import XCTest
+import Quick
+import Nimble
 @testable import TDDTimer
 
-class TDDTimerTests: XCTestCase {
+class TDDTimerTests: QuickSpec {
 
-    func test_wiringTest() {
-        let number = 12
+    override func spec() {
+        describe("wiring test") {
+            let number = 12
 
-
-        XCTAssertEqual(number, 12)
+            it("can execute properly") {
+                expect(number).to(equal(12))
+            }
+        }
     }
+
 }
