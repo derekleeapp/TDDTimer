@@ -23,15 +23,18 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                     expect(countingRepeaterVC).to(containLabelWithText("1"))
                 }
             }
-            it("starts the repeater when the view controller loads") {
-                expect(fakeRepeater.start_wasCalled).to(beTrue())
-            }
 
-            it("stops the repeater when the view controller disappears") {
-                countingRepeaterVC.viewWillDisappear(false)
+            describe("interacting with the repeater") {
+                it("starts the repeater when the view controller loads") {
+                    expect(fakeRepeater.start_wasCalled).to(beTrue())
+                }
+
+                it("stops the repeater when the view controller disappears") {
+                    countingRepeaterVC.viewWillDisappear(false)
 
 
-                expect(fakeRepeater.stop_wasCalled).to(beTrue())
+                    expect(fakeRepeater.stop_wasCalled).to(beTrue())
+                }
             }
         }
     }

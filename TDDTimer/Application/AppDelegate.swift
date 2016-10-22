@@ -9,7 +9,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool
     {
         window = UIWindow()
-        window?.rootViewController = UIViewController()
+
+        let repeater = DefaultRepeater()
+        let countingRepeaterViewController = CountingRepeaterViewController(repeater: repeater)
+
+        window?.rootViewController = countingRepeaterViewController
         window?.makeKeyAndVisible()
 
         return true
