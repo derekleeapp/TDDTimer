@@ -1,10 +1,10 @@
 protocol Repeater {
-    func start()
+    func start(closureToRepeat: (() -> ())?)
     func stop()
 }
 
 struct DefaultRepeater: Repeater {
-    func start() {
+    func start(closureToRepeat: (() -> ())?) {
         // TODO
     }
 
