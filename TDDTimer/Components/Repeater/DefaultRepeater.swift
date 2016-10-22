@@ -1,0 +1,3 @@
+protocol Repeater {
+    func start()
+}

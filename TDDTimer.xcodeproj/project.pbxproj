@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		525C3F9A1DBAE055007F60A7 /* TDDTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */; };
 		525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */; };
 		525C3FB01DBAE09F007F60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA61DBAE09F007F60A7 /* Assets.xcassets */; };
 		525C3FB11DBAE09F007F60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */; };
@@ -17,6 +16,10 @@
 		525C3FC21DBAE7D5007F60A7 /* Nimble.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 525C3FBF1DBAE766007F60A7 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		525C3FC61DBAE812007F60A7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525C3FC51DBAE812007F60A7 /* Quick.framework */; };
 		525C3FC71DBAE818007F60A7 /* Quick.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 525C3FC51DBAE812007F60A7 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE31DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift */; };
+		52902BE61DBAEC6400055450 /* CountingRepeaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */; };
+		52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE81DBAEC8F00055450 /* FakeRepeater.swift */; };
+		52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,6 @@
 /* Begin PBXFileReference section */
 		525C3F811DBAE055007F60A7 /* TDDTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3F951DBAE055007F60A7 /* TDDTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDTimerTests.swift; sourceTree = "<group>"; };
 		525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525C3FA61DBAE09F007F60A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525C3FA81DBAE09F007F60A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,10 @@
 		525C3FBC1DBAE6D6007F60A7 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = ../../Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		525C3FBF1DBAE766007F60A7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		525C3FC51DBAE812007F60A7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		52902BE31DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingRepeaterViewControllerTest.swift; sourceTree = "<group>"; };
+		52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingRepeaterViewController.swift; sourceTree = "<group>"; };
+		52902BE81DBAEC8F00055450 /* FakeRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeRepeater.swift; sourceTree = "<group>"; };
+		52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRepeater.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +121,6 @@
 				525C3FB41DBAE0C8007F60A7 /* Application */,
 				525C3FB61DBAE0C8007F60A7 /* Components */,
 				525C3FC31DBAE7F5007F60A7 /* Frameworks */,
-				525C3F991DBAE055007F60A7 /* TDDTimerTests.swift */,
 				525C3FB71DBAE0C8007F60A7 /* UI */,
 			);
 			path = TDDTimerTests;
@@ -136,6 +141,7 @@
 		525C3FAC1DBAE09F007F60A7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				52902BEA1DBAED2600055450 /* Repeater */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 		525C3FAE1DBAE09F007F60A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 		525C3FB61DBAE0C8007F60A7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				52902BE71DBAEC8800055450 /* Repeater */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 		525C3FB71DBAE0C8007F60A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				52902BE31DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -184,6 +193,22 @@
 				525C3FC51DBAE812007F60A7 /* Quick.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		52902BE71DBAEC8800055450 /* Repeater */ = {
+			isa = PBXGroup;
+			children = (
+				52902BE81DBAEC8F00055450 /* FakeRepeater.swift */,
+			);
+			path = Repeater;
+			sourceTree = "<group>";
+		};
+		52902BEA1DBAED2600055450 /* Repeater */ = {
+			isa = PBXGroup;
+			children = (
+				52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */,
+			);
+			path = Repeater;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +266,7 @@
 					};
 					525C3F941DBAE055007F60A7 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 525C3F801DBAE055007F60A7;
 					};
@@ -308,7 +334,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				525C3FBA1DBAE143007F60A7 /* main.swift in Sources */,
+				52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */,
 				525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */,
+				52902BE61DBAEC6400055450 /* CountingRepeaterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +344,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				525C3F9A1DBAE055007F60A7 /* TDDTimerTests.swift in Sources */,
+				52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */,
+				52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +499,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -478,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDTimer.app/TDDTimer";
 			};
@@ -488,6 +519,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -520,6 +552,7 @@
 				525C3FA01DBAE055007F60A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		525C3FA11DBAE055007F60A7 /* Build configuration list for PBXNativeTarget "TDDTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +561,7 @@
 				525C3FA31DBAE055007F60A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
