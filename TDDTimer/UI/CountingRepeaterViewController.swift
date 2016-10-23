@@ -34,7 +34,7 @@ class CountingRepeaterViewController: UIViewController {
         configureSubviews()
 
         repeater.start(1) {
-            self.countingLabel.text = "\(self.counterValue)"
+            self.updateCountingLabel()
             self.counterValue += 1
         }
     }
@@ -58,6 +58,10 @@ class CountingRepeaterViewController: UIViewController {
     private func configureSubviews() {
         view.backgroundColor = UIColor.whiteColor()
 
+        updateCountingLabel()
+    }
+
+    private func updateCountingLabel() {
         countingLabel.text = "\(counterValue)"
     }
 }
