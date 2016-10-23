@@ -5,12 +5,16 @@ class CountingRepeaterViewController: UIViewController {
     // MARK: - Properties
     let repeater: Repeater
 
+    private var counterValue: Int
+
     // MARK: - View Elements
     let countingLabel: UILabel
 
     // MARK: - Initialization
     init(repeater: Repeater) {
         self.repeater = repeater
+
+        counterValue = 1
 
         self.countingLabel = UILabel.newAutoLayoutView()
 
@@ -30,7 +34,8 @@ class CountingRepeaterViewController: UIViewController {
         configureSubviews()
 
         repeater.start(1) {
-            // Logic for updating the UILabel
+            self.countingLabel.text = "\(self.counterValue)"
+            self.counterValue += 1
         }
     }
 
@@ -53,6 +58,6 @@ class CountingRepeaterViewController: UIViewController {
     private func configureSubviews() {
         view.backgroundColor = UIColor.whiteColor()
 
-        countingLabel.text = "1"
+        countingLabel.text = "\(counterValue)"
     }
 }
