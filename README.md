@@ -14,6 +14,9 @@ Tests can also be run by executing the following via the command line:
 
 Given this challenge I've considered three initial ways to solve this problem (there are likely many more...) and am working to implement them:
 
-- [ ] 1. Using an object (a 'Repeater') to control the timer and the method that the timer invokes by passing in a closure/block. This object can be mocked for easy testing.
+- [x] 1. Using an object (a 'Repeater') to control the timer and the method that the timer invokes by passing in a closure/block. This object can be mocked for easy testing.
+   - For this approach I was able to test everything except for the counting adjustments and the fact that the UI is updated as a part of the closure. I think this can be implemented better but will require some design adjustments. 
+
 - [ ] 2. Defining a protocol (a 'Repeatable') to mimic the start / invalidate methods to which I can pass in an NSTimer object that could be a real NSTimer or a fake object of my own creation.
+
 - [ ] 3. Creating an UIView that itself is 'updatable' and contains the NSTimer logic within the view and is initialized with the configuration of how to update itself.
