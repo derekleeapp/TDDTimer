@@ -6,11 +6,11 @@ protocol Repeater {
 }
 
 class DefaultRepeater: Repeater {
-    var timer: NSTimer?
-    var closureToRepeat: (() -> ())?
+    private var maybeTimer: NSTimer?
+    private var closureToRepeat: (() -> ())?
 
     func start(timeInterval: NSTimeInterval, closureToRepeat: (() -> ())?) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(
+        maybeTimer = NSTimer.scheduledTimerWithTimeInterval(
             timeInterval,
             target: self,
             selector: #selector(timerInvocation),
@@ -22,7 +22,16 @@ class DefaultRepeater: Repeater {
     }
 
     func stop() {
-        // TODO
+        maybeTimer?.invalidate()
+    }
+
+    func valid() -> Bool {
+
+        if let timer = maybeTimer {
+            return timer.valid
+        }
+
+        return false
     }
 
     // MARK: - Private Methods
