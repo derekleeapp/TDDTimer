@@ -37,6 +37,21 @@ class CountingRepeaterViewControllerTest: QuickSpec {
 
                     expect(fakeRepeater.stop_wasCalled).to(beTrue())
                 }
+
+                it("configures the repeater to update the counting label") {
+                    let oldLabelValue = countingRepeaterVC.countingLabel.text
+
+
+                    if let closureToRepeat = fakeRepeater.start_arg?.maybeClosureToRepeat {
+                        closureToRepeat()
+                    }
+                    NSRunLoop.advance()
+
+
+                    let newLabelValue = countingRepeaterVC.countingLabel.text
+
+                    expect(oldLabelValue).toNot(equal(newLabelValue))
+                }
             }
         }
     }

@@ -34,8 +34,8 @@ class CountingRepeaterViewController: UIViewController {
         configureSubviews()
 
         repeater.start(1) {
-            self.updateCountingLabel()
             self.counterValue += 1
+            self.updateCountingLabel()
         }
     }
 
