@@ -28,7 +28,7 @@ class DefaultRepeater: Repeater {
     }
 
     func stop() {
-        // TODO
+        timer?.invalidate()
     }
 
     // MARK: - Private Methods
