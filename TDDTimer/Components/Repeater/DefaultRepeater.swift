@@ -1,15 +1,21 @@
 import Foundation
 
 protocol Repeater {
-    func start(timeInterval: NSTimeInterval, closureToRepeat: (() -> ())?)
+    func start(
+        timeInterval: NSTimeInterval,
+        maybeClosureToRepeat: (() -> ())?
+    )
     func stop()
 }
 
 class DefaultRepeater: Repeater {
     var timer: NSTimer?
-    var closureToRepeat: (() -> ())?
+    var maybeClosureToRepeat: (() -> ())?
 
-    func start(timeInterval: NSTimeInterval, closureToRepeat: (() -> ())?) {
+    func start(
+        timeInterval: NSTimeInterval,
+        maybeClosureToRepeat: (() -> ())?)
+    {
         timer = NSTimer.scheduledTimerWithTimeInterval(
             timeInterval,
             target: self,
@@ -18,7 +24,7 @@ class DefaultRepeater: Repeater {
             repeats: true
         )
 
-        self.closureToRepeat = closureToRepeat
+        self.maybeClosureToRepeat = maybeClosureToRepeat
     }
 
     func stop() {
@@ -27,7 +33,7 @@ class DefaultRepeater: Repeater {
 
     // MARK: - Private Methods
     @objc private func timerInvocation() {
-        if let closureToRepeat = self.closureToRepeat {
+        if let closureToRepeat = self.maybeClosureToRepeat {
             closureToRepeat()
         }
     }

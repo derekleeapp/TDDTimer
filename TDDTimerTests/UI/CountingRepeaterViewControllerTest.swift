@@ -28,7 +28,7 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                 it("starts the repeater when the view controller loads") {
                     expect(fakeRepeater.start_wasCalled).to(beTrue())
                     expect(fakeRepeater.start_arg?.timeInterval).to(equal(1))
-                    expect(fakeRepeater.start_arg?.closureToRepeat).toNot(beNil())
+                    expect(fakeRepeater.start_arg?.maybeClosureToRepeat).toNot(beNil())
                 }
 
                 it("stops the repeater when the view controller disappears") {

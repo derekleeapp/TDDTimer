@@ -3,14 +3,20 @@ import Foundation
 
 class FakeRepeater: Repeater {
     private(set) var start_wasCalled = false
-    private(set) var start_arg: (timeInterval: NSTimeInterval, closureToRepeat: (() -> ())?)?
+    private(set) var start_arg: (
+        timeInterval: NSTimeInterval,
+        maybeClosureToRepeat: (() -> ())?
+    )?
 
     func start(
         timeInterval: NSTimeInterval,
-        closureToRepeat: (() -> ())?)
+        maybeClosureToRepeat: (() -> ())?)
     {
         start_wasCalled = true
-        start_arg = (timeInterval: timeInterval, closureToRepeat: closureToRepeat)
+        start_arg = (
+            timeInterval: timeInterval,
+            maybeClosureToRepeat: maybeClosureToRepeat
+        )
     }
 
     private(set) var stop_wasCalled = false
