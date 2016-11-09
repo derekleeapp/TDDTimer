@@ -8,6 +8,12 @@ class FakeRepeater: Repeater {
         maybeClosureToRepeat: (() -> ())?
     )?
 
+    var isValid: Bool {
+        get {
+            return false
+        }
+    }
+
     func start(
         timeInterval: NSTimeInterval,
         maybeClosureToRepeat: (() -> ())?)

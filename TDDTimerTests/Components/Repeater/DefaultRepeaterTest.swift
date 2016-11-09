@@ -31,7 +31,7 @@ class DefaultRepeaterTest: QuickSpec {
                 defaultRepeater.stop()
 
 
-                expect(defaultRepeater.timer?.valid).to(beFalse())
+                expect(defaultRepeater.isValid).to(beFalse())
             }
         }
     }

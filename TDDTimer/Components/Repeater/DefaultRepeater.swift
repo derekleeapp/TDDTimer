@@ -1,6 +1,8 @@
 import Foundation
 
 protocol Repeater {
+    var isValid: Bool { get }
+
     func start(
         timeInterval: NSTimeInterval,
         maybeClosureToRepeat: (() -> ())?
@@ -9,14 +11,24 @@ protocol Repeater {
 }
 
 class DefaultRepeater: Repeater {
-    private(set) var timer: NSTimer?
+    private var maybeTimer: NSTimer?
     private(set) var maybeClosureToRepeat: (() -> ())?
+
+    var isValid: Bool {
+        get {
+            if let timer = maybeTimer {
+                return timer.valid
+            }
+
+            return false
+        }
+    }
 
     func start(
         timeInterval: NSTimeInterval,
         maybeClosureToRepeat: (() -> ())?)
     {
-        timer = NSTimer.scheduledTimerWithTimeInterval(
+        maybeTimer = NSTimer.scheduledTimerWithTimeInterval(
             timeInterval,
             target: self,
             selector: #selector(timerInvocation),
@@ -28,7 +40,7 @@ class DefaultRepeater: Repeater {
     }
 
     func stop() {
-        timer?.invalidate()
+        maybeTimer?.invalidate()
     }
 
     // MARK: - Private Methods
