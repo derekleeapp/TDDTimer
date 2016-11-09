@@ -12,7 +12,7 @@ protocol Repeater {
 
 class DefaultRepeater: Repeater {
     private var maybeTimer: NSTimer?
-    private(set) var maybeClosureToRepeat: (() -> ())?
+    private var maybeClosureToRepeat: (() -> ())?
 
     var isValid: Bool {
         get {
