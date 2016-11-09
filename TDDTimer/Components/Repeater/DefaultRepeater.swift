@@ -9,8 +9,8 @@ protocol Repeater {
 }
 
 class DefaultRepeater: Repeater {
-    var timer: NSTimer?
-    var maybeClosureToRepeat: (() -> ())?
+    private(set) var timer: NSTimer?
+    private(set) var maybeClosureToRepeat: (() -> ())?
 
     func start(
         timeInterval: NSTimeInterval,
