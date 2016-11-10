@@ -3,20 +3,23 @@ import PureLayout
 
 class CountingRepeaterViewController: UIViewController {
     // MARK: - Properties
-    let repeater: Repeater
-
+    private let repeater: Repeater
+    private let maximumCountValue: Int
     private var counterValue: Int
 
     // MARK: - View Elements
     let countingLabel: UILabel
 
     // MARK: - Initialization
-    init(repeater: Repeater) {
+    init(repeater: Repeater,
+         maximumCountValue: Int)
+    {
         self.repeater = repeater
+        self.maximumCountValue = maximumCountValue
 
         counterValue = 1
 
-        self.countingLabel = UILabel.newAutoLayoutView()
+        countingLabel = UILabel.newAutoLayoutView()
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -36,11 +39,11 @@ class CountingRepeaterViewController: UIViewController {
         repeater.start(
             timeInterval: 1,
             maybeConditionToStop: {
-                return false
+                return self.counterValue >= self.maximumCountValue
             },
             maybeClosureToRepeat:  {
-            self.counterValue += 1
-            self.updateCountingLabel()
+                self.counterValue += 1
+                self.updateCountingLabel()
             }
         )
     }

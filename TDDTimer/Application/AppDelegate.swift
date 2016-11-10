@@ -11,7 +11,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
 
         let repeater = DefaultRepeater()
-        let countingRepeaterViewController = CountingRepeaterViewController(repeater: repeater)
+        let countingRepeaterViewController = CountingRepeaterViewController(
+            repeater: repeater,
+            maximumCountValue: 10
+        )
 
         window?.rootViewController = countingRepeaterViewController
         window?.makeKeyAndVisible()
