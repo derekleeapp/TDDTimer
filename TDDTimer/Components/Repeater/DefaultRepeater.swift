@@ -4,7 +4,8 @@ protocol Repeater {
     var isValid: Bool { get }
 
     func start(
-        timeInterval: NSTimeInterval,
+        timeInterval timeInterval: NSTimeInterval,
+        maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?
     )
     func stop()
@@ -25,7 +26,8 @@ class DefaultRepeater: Repeater {
     }
 
     func start(
-        timeInterval: NSTimeInterval,
+        timeInterval timeInterval: NSTimeInterval,
+        maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?)
     {
         maybeTimer = NSTimer.scheduledTimerWithTimeInterval(
@@ -36,7 +38,17 @@ class DefaultRepeater: Repeater {
             repeats: true
         )
 
-        self.maybeClosureToRepeat = maybeClosureToRepeat
+        self.maybeClosureToRepeat = {
+            if let closureToRepeat = maybeClosureToRepeat {
+                closureToRepeat()
+            }
+
+            if let conditionToStop = maybeConditionToStop {
+                if (conditionToStop()) {
+                    self.stop()
+                }
+            }
+        }
     }
 
     func stop() {

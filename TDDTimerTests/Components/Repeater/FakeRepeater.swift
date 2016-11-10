@@ -5,6 +5,7 @@ class FakeRepeater: Repeater {
     private(set) var start_wasCalled = false
     private(set) var start_arg: (
         timeInterval: NSTimeInterval,
+        maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?
     )?
 
@@ -15,12 +16,14 @@ class FakeRepeater: Repeater {
     }
 
     func start(
-        timeInterval: NSTimeInterval,
+        timeInterval timeInterval: NSTimeInterval,
+        maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?)
     {
         start_wasCalled = true
         start_arg = (
             timeInterval: timeInterval,
+            maybeConditionToStop: maybeConditionToStop,
             maybeClosureToRepeat: maybeClosureToRepeat
         )
     }

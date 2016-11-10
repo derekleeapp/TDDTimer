@@ -33,10 +33,16 @@ class CountingRepeaterViewController: UIViewController {
         addConstraints()
         configureSubviews()
 
-        repeater.start(1) {
+        repeater.start(
+            timeInterval: 1,
+            maybeConditionToStop: {
+                return false
+            },
+            maybeClosureToRepeat:  {
             self.counterValue += 1
             self.updateCountingLabel()
-        }
+            }
+        )
     }
 
     override func viewWillDisappear(animated: Bool) {
