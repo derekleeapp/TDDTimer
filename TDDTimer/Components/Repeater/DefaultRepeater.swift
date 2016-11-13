@@ -11,10 +11,13 @@ protocol Repeater {
     func stop()
 }
 
-class DefaultRepeater: Repeater {
+class DefaultRepeater {
     private var maybeTimer: NSTimer?
     private var maybeClosureToRepeat: (() -> ())?
+}
 
+// MARK: - Repeater
+extension DefaultRepeater: Repeater {
     var isValid: Bool {
         get {
             if let timer = maybeTimer {
@@ -54,8 +57,10 @@ class DefaultRepeater: Repeater {
     func stop() {
         maybeTimer?.invalidate()
     }
+}
 
-    // MARK: - Private Methods
+// MARK: - Private Methods
+extension DefaultRepeater {
     @objc private func timerInvocation() {
         if let closureToRepeat = self.maybeClosureToRepeat {
             closureToRepeat()

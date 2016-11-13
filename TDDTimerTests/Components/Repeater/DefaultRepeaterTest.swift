@@ -30,9 +30,8 @@ class DefaultRepeaterTest: QuickSpec {
                         closureWasCalled = true
                     }
                 )
-
-
                 NSRunLoop.advance()
+
 
                 expect(closureWasCalled).to(beTrue())
             }

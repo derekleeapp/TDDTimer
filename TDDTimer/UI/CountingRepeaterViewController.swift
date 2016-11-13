@@ -53,8 +53,10 @@ class CountingRepeaterViewController: UIViewController {
 
         repeater.stop()
     }
+}
 
-    // MARK: - Private Methods
+// MARK: - Private Methods
+extension CountingRepeaterViewController {
     private func addSubviews() {
         view.addSubview(countingLabel)
     }
