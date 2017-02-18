@@ -3,9 +3,9 @@ import PureLayout
 
 class CountingRepeaterViewController: UIViewController {
     // MARK: - Properties
-    private let repeater: Repeater
-    private let maximumCountValue: Int
-    private var counterValue: Int
+    fileprivate let repeater: Repeater
+    fileprivate let maximumCountValue: Int
+    fileprivate var counterValue: Int
 
     // MARK: - View Elements
     let countingLabel: UILabel
@@ -19,7 +19,7 @@ class CountingRepeaterViewController: UIViewController {
 
         counterValue = 1
 
-        countingLabel = UILabel.newAutoLayoutView()
+        countingLabel = UILabel.newAutoLayout()
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -48,7 +48,7 @@ class CountingRepeaterViewController: UIViewController {
         )
     }
 
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
         repeater.stop()
@@ -57,22 +57,22 @@ class CountingRepeaterViewController: UIViewController {
 
 // MARK: - Private Methods
 extension CountingRepeaterViewController {
-    private func addSubviews() {
+    fileprivate func addSubviews() {
         view.addSubview(countingLabel)
     }
 
-    private func addConstraints() {
-        countingLabel.autoAlignAxisToSuperviewAxis(.Horizontal)
-        countingLabel.autoAlignAxisToSuperviewAxis(.Vertical)
+    fileprivate func addConstraints() {
+        countingLabel.autoAlignAxis(toSuperviewAxis: .horizontal)
+        countingLabel.autoAlignAxis(toSuperviewAxis: .vertical)
     }
 
-    private func configureSubviews() {
-        view.backgroundColor = UIColor.whiteColor()
+    fileprivate func configureSubviews() {
+        view.backgroundColor = UIColor.white
 
         updateCountingLabel()
     }
 
-    private func updateCountingLabel() {
+    fileprivate func updateCountingLabel() {
         countingLabel.text = "\(counterValue)"
     }
 }

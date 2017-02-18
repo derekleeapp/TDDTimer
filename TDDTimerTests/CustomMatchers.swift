@@ -1,7 +1,7 @@
 import UIKit
 import Nimble
 
-public func containLabelWithText(searchText: String) -> NonNilMatcherFunc<UIViewController> {
+public func containLabelWithText(_ searchText: String) -> NonNilMatcherFunc<UIViewController> {
     return NonNilMatcherFunc { expression, failureMessage in
         guard let viewController = try expression.evaluate() else {
             return false

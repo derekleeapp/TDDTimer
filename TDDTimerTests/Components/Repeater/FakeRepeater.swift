@@ -2,9 +2,9 @@ import Foundation
 @testable import TDDTimer
 
 class FakeRepeater: Repeater {
-    private(set) var start_wasCalled = false
-    private(set) var start_arg: (
-        timeInterval: NSTimeInterval,
+    fileprivate(set) var start_wasCalled = false
+    fileprivate(set) var start_arg: (
+        timeInterval: TimeInterval,
         maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?
     )?
@@ -16,7 +16,7 @@ class FakeRepeater: Repeater {
     }
 
     func start(
-        timeInterval timeInterval: NSTimeInterval,
+        timeInterval: TimeInterval,
         maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?)
     {
@@ -28,7 +28,7 @@ class FakeRepeater: Repeater {
         )
     }
 
-    private(set) var stop_wasCalled = false
+    fileprivate(set) var stop_wasCalled = false
     func stop() {
         stop_wasCalled = true
     }

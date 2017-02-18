@@ -1,10 +1,13 @@
 import UIKit
 
-func startApplication(delegateClassName: String) {
+func startApplication(_ delegateClassName: String) {
     UIApplicationMain(
-        Process.argc,
-        Process.unsafeArgv,
-        String(UIApplication),
+        CommandLine.argc,
+        UnsafeMutableRawPointer(CommandLine.unsafeArgv)
+            .bindMemory(
+                to: UnsafeMutablePointer<Int8>.self,
+                capacity: Int(CommandLine.argc)),
+        String(describing: UIApplication.self),
         delegateClassName
     )
 }
@@ -12,7 +15,7 @@ func startApplication(delegateClassName: String) {
 class TestingAppDelegate: UIApplication, UIApplicationDelegate {}
 
 if NSClassFromString("XCTestCase") != nil {
-    startApplication(NSStringFromClass(TestingAppDelegate))
+    startApplication(NSStringFromClass(TestingAppDelegate.self))
 } else {
-    startApplication(NSStringFromClass(AppDelegate))
+    startApplication(NSStringFromClass(AppDelegate.self))
 }

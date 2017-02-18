@@ -48,7 +48,7 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                         if let closureToRepeat = fakeRepeater.start_arg?.maybeClosureToRepeat {
                             closureToRepeat()
                         }
-                        NSRunLoop.advance()
+                        RunLoop.advance()
 
 
                         let newLabelValue = countingRepeaterVC.countingLabel.text
@@ -79,7 +79,7 @@ class CountingRepeaterViewControllerTest: QuickSpec {
         }
     }
 
-    private func prepareViewControllerForDisplay(viewController: UIViewController) {
+    fileprivate func prepareViewControllerForDisplay(_ viewController: UIViewController) {
         viewController.view.setNeedsLayout()
     }
     
