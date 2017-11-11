@@ -21,6 +21,10 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                 }
 
                 describe("view elements") {
+                    it("displays a header on the screen") {
+                        expect(countingRepeaterVC).to(containLabelWithText("Counting Timer Test"))
+                    }
+
                     it("displays a single digit on the screen") {
                         expect(countingRepeaterVC).to(containLabelWithText("1"))
                     }
@@ -75,12 +79,10 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                     expect(stopTimerResult).to(beTrue())
                 }
             }
-
         }
     }
 
     fileprivate func prepareViewControllerForDisplay(_ viewController: UIViewController) {
         viewController.view.setNeedsLayout()
     }
-    
 }

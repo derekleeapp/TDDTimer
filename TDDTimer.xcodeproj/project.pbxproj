@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		523BA9A21DBB18A3009788CF /* DefaultRepeaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BA9A11DBB18A3009788CF /* DefaultRepeaterTest.swift */; };
 		523BA9A41DBB50F4009788CF /* ExtensionsForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BA9A31DBB50F4009788CF /* ExtensionsForTest.swift */; };
+		524987111E6158220098933C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524987101E6158220098933C /* UIColorExtensions.swift */; };
 		525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */; };
 		525C3FB01DBAE09F007F60A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA61DBAE09F007F60A7 /* Assets.xcassets */; };
 		525C3FB11DBAE09F007F60A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525C3FA71DBAE09F007F60A7 /* LaunchScreen.storyboard */; };
@@ -18,11 +19,16 @@
 		525C3FC21DBAE7D5007F60A7 /* Nimble.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 525C3FBF1DBAE766007F60A7 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		525C3FC61DBAE812007F60A7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525C3FC51DBAE812007F60A7 /* Quick.framework */; };
 		525C3FC71DBAE818007F60A7 /* Quick.framework in Carthage: Copy Files */ = {isa = PBXBuildFile; fileRef = 525C3FC51DBAE812007F60A7 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		526F7D8D1E67CD53005D53FB /* UIButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526F7D8C1E67CD53005D53FB /* UIButtonStyle.swift */; };
+		526F7D8F1E67CF0F005D53FB /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526F7D8E1E67CF0F005D53FB /* UIButtonExtensions.swift */; };
 		52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE31DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift */; };
 		52902BE61DBAEC6400055450 /* CountingRepeaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */; };
 		52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE81DBAEC8F00055450 /* FakeRepeater.swift */; };
 		52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */; };
 		52902BEE1DBAF17500055450 /* CustomMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BED1DBAF17500055450 /* CustomMatchers.swift */; };
+		529321CD1E5D6B9D00DC1FA9 /* UILabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */; };
+		529321CF1E5D6BAF00DC1FA9 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */; };
+		529321D11E5D6EA700DC1FA9 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,7 @@
 /* Begin PBXFileReference section */
 		523BA9A11DBB18A3009788CF /* DefaultRepeaterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRepeaterTest.swift; sourceTree = "<group>"; };
 		523BA9A31DBB50F4009788CF /* ExtensionsForTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionsForTest.swift; sourceTree = "<group>"; };
+		524987101E6158220098933C /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		525C3F811DBAE055007F60A7 /* TDDTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3F951DBAE055007F60A7 /* TDDTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525C3FA51DBAE09F007F60A7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,11 +71,16 @@
 		525C3FBC1DBAE6D6007F60A7 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = ../../Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		525C3FBF1DBAE766007F60A7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		525C3FC51DBAE812007F60A7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		526F7D8C1E67CD53005D53FB /* UIButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonStyle.swift; sourceTree = "<group>"; };
+		526F7D8E1E67CF0F005D53FB /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		52902BE31DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingRepeaterViewControllerTest.swift; sourceTree = "<group>"; };
 		52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingRepeaterViewController.swift; sourceTree = "<group>"; };
 		52902BE81DBAEC8F00055450 /* FakeRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeRepeater.swift; sourceTree = "<group>"; };
 		52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRepeater.swift; sourceTree = "<group>"; };
 		52902BED1DBAF17500055450 /* CustomMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMatchers.swift; sourceTree = "<group>"; };
+		529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStyle.swift; sourceTree = "<group>"; };
+		529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +176,7 @@
 		525C3FAE1DBAE09F007F60A7 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				529321CA1E5D6B6C00DC1FA9 /* StyleGuide */,
 				52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */,
 			);
 			path = UI;
@@ -203,6 +216,15 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		526F7D8B1E67CD41005D53FB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				526F7D8C1E67CD53005D53FB /* UIButtonStyle.swift */,
+				526F7D8E1E67CF0F005D53FB /* UIButtonExtensions.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
 		52902BE71DBAEC8800055450 /* Repeater */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +240,26 @@
 				52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */,
 			);
 			path = Repeater;
+			sourceTree = "<group>";
+		};
+		529321CA1E5D6B6C00DC1FA9 /* StyleGuide */ = {
+			isa = PBXGroup;
+			children = (
+				526F7D8B1E67CD41005D53FB /* UIButton */,
+				524987101E6158220098933C /* UIColorExtensions.swift */,
+				529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */,
+				529321CB1E5D6B6C00DC1FA9 /* UILabel */,
+			);
+			path = StyleGuide;
+			sourceTree = "<group>";
+		};
+		529321CB1E5D6B6C00DC1FA9 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */,
+				529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */,
+			);
+			path = UILabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,10 +385,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526F7D8D1E67CD53005D53FB /* UIButtonStyle.swift in Sources */,
 				525C3FBA1DBAE143007F60A7 /* main.swift in Sources */,
 				52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */,
+				529321D11E5D6EA700DC1FA9 /* UIFontExtensions.swift in Sources */,
+				529321CD1E5D6B9D00DC1FA9 /* UILabelStyle.swift in Sources */,
+				526F7D8F1E67CF0F005D53FB /* UIButtonExtensions.swift in Sources */,
 				525C3FAF1DBAE09F007F60A7 /* AppDelegate.swift in Sources */,
+				529321CF1E5D6BAF00DC1FA9 /* UILabelExtensions.swift in Sources */,
 				52902BE61DBAEC6400055450 /* CountingRepeaterViewController.swift in Sources */,
+				524987111E6158220098933C /* UIColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -518,7 +566,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -538,7 +586,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDTimer.app/TDDTimer";
 			};
@@ -558,7 +606,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.derekleeapp.TDDTimerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDTimer.app/TDDTimer";
 			};
