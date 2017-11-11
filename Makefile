@@ -5,5 +5,4 @@ update:
 	@carthage update --platform iOS
 
 tests:
-	@xcodebuild -project TDDTimer.xcodeproj -scheme "TDDTimer" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=10.2,name=iPhone 7" clean build test
-
+	@xcodebuild -project TDDTimer.xcodeproj -scheme "TDDTimer" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.1,name=iPhone 7" clean build test
