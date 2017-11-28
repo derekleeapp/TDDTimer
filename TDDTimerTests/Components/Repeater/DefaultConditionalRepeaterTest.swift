@@ -2,32 +2,32 @@ import Quick
 import Nimble
 @testable import TDDTimer
 
-class DefaultRepeaterTest: QuickSpec {
+class DefaultConditionalRepeaterSpec: QuickSpec {
     override func spec() {
-        describe("the default repeater") {
+        describe("the default conditional repeater") {
             it("starts the timer") {
-                let defaultRepeater = DefaultRepeater()
-                defaultRepeater.start(
+                let conditionalRepeater = DefaultConditionalRepeater()
+                conditionalRepeater.start(
                     timeInterval: 0.01,
                     maybeConditionToStop: nil,
                     maybeClosureToRepeat: nil
                 )
 
 
-                expect(defaultRepeater.isValid).to(beTrue())
+                expect(conditionalRepeater.isValid).to(beTrue())
             }
 
             it("invokes the closure to repeat after calling start") {
-                let defaultRepeater = DefaultRepeater()
+                let conditionalRepeater = DefaultConditionalRepeater()
 
 
                 var closureWasCalled = false
-                defaultRepeater.start(
+                conditionalRepeater.start(
                     timeInterval: 0.01,
                     maybeConditionToStop: nil,
                     maybeClosureToRepeat: {
                         closureWasCalled = true
-                    }
+                }
                 )
                 RunLoop.advance()
 
@@ -36,32 +36,32 @@ class DefaultRepeaterTest: QuickSpec {
             }
 
             it("invalidates the timer when stop is invoked") {
-                let defaultRepeater = DefaultRepeater()
-                defaultRepeater.start(
+                let conditionalRepeater = DefaultConditionalRepeater()
+                conditionalRepeater.start(
                     timeInterval: 0.01,
                     maybeConditionToStop: nil,
                     maybeClosureToRepeat: nil
                 )
 
 
-                defaultRepeater.stop()
+                conditionalRepeater.stop()
 
 
-                expect(defaultRepeater.isValid).to(beFalse())
+                expect(conditionalRepeater.isValid).to(beFalse())
             }
 
             it("stops the timer automatically when the stop condition is met") {
-                let defaultRepeater = DefaultRepeater()
-                defaultRepeater.start(
+                let conditionalRepeater = DefaultConditionalRepeater()
+                conditionalRepeater.start(
                     timeInterval: 0.01,
                     maybeConditionToStop: {
                         return true
-                    },
+                },
                     maybeClosureToRepeat: nil
                 )
 
 
-                expect(defaultRepeater.isValid).toEventually(beFalse())
+                expect(conditionalRepeater.isValid).toEventually(beFalse())
             }
         }
     }

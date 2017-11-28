@@ -29,6 +29,8 @@
 		529321CD1E5D6B9D00DC1FA9 /* UILabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */; };
 		529321CF1E5D6BAF00DC1FA9 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */; };
 		529321D11E5D6EA700DC1FA9 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */; };
+		52E74B6D1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B6C1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift */; };
+		52E74B6F1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B6E1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStyle.swift; sourceTree = "<group>"; };
 		529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		52E74B6C1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConditionalRepeater.swift; sourceTree = "<group>"; };
+		52E74B6E1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConditionalRepeaterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,7 @@
 			children = (
 				523BA9A11DBB18A3009788CF /* DefaultRepeaterTest.swift */,
 				52902BE81DBAEC8F00055450 /* FakeRepeater.swift */,
+				52E74B6E1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift */,
 			);
 			path = Repeater;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */,
+				52E74B6C1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift */,
 			);
 			path = Repeater;
 			sourceTree = "<group>";
@@ -388,6 +394,7 @@
 				526F7D8D1E67CD53005D53FB /* UIButtonStyle.swift in Sources */,
 				525C3FBA1DBAE143007F60A7 /* main.swift in Sources */,
 				52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */,
+				52E74B6D1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift in Sources */,
 				529321D11E5D6EA700DC1FA9 /* UIFontExtensions.swift in Sources */,
 				529321CD1E5D6B9D00DC1FA9 /* UILabelStyle.swift in Sources */,
 				526F7D8F1E67CF0F005D53FB /* UIButtonExtensions.swift in Sources */,
@@ -406,6 +413,7 @@
 				523BA9A21DBB18A3009788CF /* DefaultRepeaterTest.swift in Sources */,
 				52902BE91DBAEC8F00055450 /* FakeRepeater.swift in Sources */,
 				523BA9A41DBB50F4009788CF /* ExtensionsForTest.swift in Sources */,
+				52E74B6F1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift in Sources */,
 				52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
