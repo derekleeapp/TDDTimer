@@ -2,7 +2,7 @@ import Quick
 import Nimble
 @testable import TDDTimer
 
-class DefaultSimpleRepeaterTest: QuickSpec {
+class DefaultSimpleRepeaterSpec: QuickSpec {
     override func spec() {
         describe("the default simple repeater") {
             it("starts the timer") {

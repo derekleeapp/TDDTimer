@@ -16,7 +16,7 @@ class DefaultConditionalRepeater {
     fileprivate var maybeTimerClosure: (() -> ())?
 }
 
-// MARK: - Repeater
+// MARK: - ConditionalRepeater
 extension DefaultConditionalRepeater: ConditionalRepeater {
     var isValid: Bool {
         get {

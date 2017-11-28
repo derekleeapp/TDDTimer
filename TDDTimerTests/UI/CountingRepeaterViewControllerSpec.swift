@@ -2,7 +2,7 @@ import Quick
 import Nimble
 @testable import TDDTimer
 
-class CountingRepeaterViewControllerTest: QuickSpec {
+class CountingRepeaterViewControllerSpec: QuickSpec {
     override func spec() {
         describe("a view controller that uses an injectable repeater") {
             var fakeRepeater: FakeConditionalRepeater!
