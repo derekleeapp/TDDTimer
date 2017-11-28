@@ -3,7 +3,6 @@ import Nimble
 @testable import TDDTimer
 
 class CountingRepeaterViewControllerTest: QuickSpec {
-
     override func spec() {
         describe("a view controller that uses an injectable repeater") {
             var fakeRepeater: FakeConditionalRepeater!
@@ -17,7 +16,7 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                         maximumCountValue: 10
                     )
 
-                    self.prepareViewControllerForDisplay(countingRepeaterVC)
+                    countingRepeaterVC.loadViewControllerForUnitTest()
                 }
 
                 describe("view elements") {
@@ -69,7 +68,7 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                         maximumCountValue: 0
                     )
 
-                    self.prepareViewControllerForDisplay(countingRepeaterVC)
+                    countingRepeaterVC.loadViewControllerForUnitTest()
                 }
 
                 it("stops the repeater when the counter reaches 2") {
@@ -80,9 +79,5 @@ class CountingRepeaterViewControllerTest: QuickSpec {
                 }
             }
         }
-    }
-
-    fileprivate func prepareViewControllerForDisplay(_ viewController: UIViewController) {
-        viewController.view.setNeedsLayout()
     }
 }
