@@ -12,10 +12,10 @@ protocol SimpleRepeater {
 
 class DefaultSimpleRepeater {
     fileprivate var maybeTimer: Timer?
-    fileprivate var maybeClosureToRepeat: (() -> ())?
+    fileprivate var maybeTimerClosure: (() -> ())?
 }
 
-// MARK: - Repeater
+// MARK: - SimpleRepeater
 extension DefaultSimpleRepeater: SimpleRepeater {
     var isValid: Bool {
         get {
@@ -39,7 +39,7 @@ extension DefaultSimpleRepeater: SimpleRepeater {
             repeats: true
         )
 
-        self.maybeClosureToRepeat = {
+        self.maybeTimerClosure = {
             if let closureToRepeat = maybeClosureToRepeat {
                 closureToRepeat()
             }
@@ -51,10 +51,10 @@ extension DefaultSimpleRepeater: SimpleRepeater {
     }
 }
 
-// MARK: - Private Methods
+// MARK: - Actions
 extension DefaultSimpleRepeater {
     @objc fileprivate func timerInvocation() {
-        if let closureToRepeat = self.maybeClosureToRepeat {
+        if let closureToRepeat = self.maybeTimerClosure {
             closureToRepeat()
         }
     }

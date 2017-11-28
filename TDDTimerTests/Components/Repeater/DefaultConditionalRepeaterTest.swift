@@ -9,8 +9,8 @@ class DefaultConditionalRepeaterSpec: QuickSpec {
                 let conditionalRepeater = DefaultConditionalRepeater()
                 conditionalRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: nil,
-                    maybeClosureToRepeat: nil
+                    conditionToStop: nil,
+                    closureToRepeat: nil
                 )
 
 
@@ -24,10 +24,10 @@ class DefaultConditionalRepeaterSpec: QuickSpec {
                 var closureWasCalled = false
                 conditionalRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: nil,
-                    maybeClosureToRepeat: {
+                    conditionToStop: nil,
+                    closureToRepeat: {
                         closureWasCalled = true
-                }
+                    }
                 )
                 RunLoop.advance()
 
@@ -39,8 +39,8 @@ class DefaultConditionalRepeaterSpec: QuickSpec {
                 let conditionalRepeater = DefaultConditionalRepeater()
                 conditionalRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: nil,
-                    maybeClosureToRepeat: nil
+                    conditionToStop: nil,
+                    closureToRepeat: nil
                 )
 
 
@@ -54,10 +54,10 @@ class DefaultConditionalRepeaterSpec: QuickSpec {
                 let conditionalRepeater = DefaultConditionalRepeater()
                 conditionalRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: {
+                    conditionToStop: {
                         return true
-                },
-                    maybeClosureToRepeat: nil
+                    },
+                    closureToRepeat: nil
                 )
 
 

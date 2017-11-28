@@ -17,8 +17,8 @@ class FakeConditionalRepeater: ConditionalRepeater {
 
     func start(
         timeInterval: TimeInterval,
-        maybeConditionToStop: (() -> Bool)?,
-        maybeClosureToRepeat: (() -> ())?)
+        conditionToStop maybeConditionToStop: (() -> Bool)?,
+        closureToRepeat maybeClosureToRepeat: (() -> ())?)
     {
         start_wasCalled = true
         start_arg = (

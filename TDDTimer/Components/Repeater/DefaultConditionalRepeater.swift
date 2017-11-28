@@ -5,15 +5,15 @@ protocol ConditionalRepeater {
     
     func start(
         timeInterval: TimeInterval,
-        maybeConditionToStop: (() -> Bool)?,
-        maybeClosureToRepeat: (() -> ())?
+        conditionToStop maybeConditionToStop: (() -> Bool)?,
+        closureToRepeat maybeClosureToRepeat: (() -> ())?
     )
     func stop()
 }
 
 class DefaultConditionalRepeater {
     fileprivate var maybeTimer: Timer?
-    fileprivate var maybeClosureToRepeat: (() -> ())?
+    fileprivate var maybeTimerClosure: (() -> ())?
 }
 
 // MARK: - Repeater
@@ -30,8 +30,8 @@ extension DefaultConditionalRepeater: ConditionalRepeater {
     
     func start(
         timeInterval: TimeInterval,
-        maybeConditionToStop: (() -> Bool)?,
-        maybeClosureToRepeat: (() -> ())?)
+        conditionToStop maybeConditionToStop: (() -> Bool)?,
+        closureToRepeat maybeClosureToRepeat: (() -> ())?)
     {
         maybeTimer = Timer.scheduledTimer(
             timeInterval: timeInterval,
@@ -41,7 +41,7 @@ extension DefaultConditionalRepeater: ConditionalRepeater {
             repeats: true
         )
         
-        self.maybeClosureToRepeat = {
+        self.maybeTimerClosure = {
             if let closureToRepeat = maybeClosureToRepeat {
                 closureToRepeat()
             }
@@ -62,7 +62,7 @@ extension DefaultConditionalRepeater: ConditionalRepeater {
 // MARK: - Actions
 extension DefaultConditionalRepeater {
     @objc fileprivate func timerInvocation() {
-        if let closureToRepeat = self.maybeClosureToRepeat {
+        if let closureToRepeat = self.maybeTimerClosure {
             closureToRepeat()
         }
     }

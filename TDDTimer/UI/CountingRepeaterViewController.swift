@@ -45,10 +45,10 @@ class CountingRepeaterViewController: UIViewController {
 
         repeater.start(
             timeInterval: 1,
-            maybeConditionToStop: {
+            conditionToStop: {
                 return self.counterValue >= self.maximumCountValue
             },
-            maybeClosureToRepeat:  {
+            closureToRepeat:  {
                 self.counterValue += 1
                 self.updateCountingLabel()
             }
