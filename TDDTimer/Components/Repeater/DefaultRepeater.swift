@@ -19,11 +19,7 @@ class DefaultSimpleRepeater {
 extension DefaultSimpleRepeater: SimpleRepeater {
     var isValid: Bool {
         get {
-            if let timer = maybeTimer {
-                return timer.isValid
-            }
-
-            return false
+            return maybeTimer?.isValid ?? false
         }
     }
 
@@ -39,7 +35,7 @@ extension DefaultSimpleRepeater: SimpleRepeater {
             repeats: true
         )
 
-        self.maybeTimerClosure = {
+        maybeTimerClosure = {
             if let closureToRepeat = maybeClosureToRepeat {
                 closureToRepeat()
             }
@@ -54,7 +50,7 @@ extension DefaultSimpleRepeater: SimpleRepeater {
 // MARK: - Actions
 extension DefaultSimpleRepeater {
     @objc fileprivate func timerInvocation() {
-        if let closureToRepeat = self.maybeTimerClosure {
+        if let closureToRepeat = maybeTimerClosure {
             closureToRepeat()
         }
     }

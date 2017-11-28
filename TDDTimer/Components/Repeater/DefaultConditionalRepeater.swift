@@ -20,11 +20,7 @@ class DefaultConditionalRepeater {
 extension DefaultConditionalRepeater: ConditionalRepeater {
     var isValid: Bool {
         get {
-            if let timer = maybeTimer {
-                return timer.isValid
-            }
-            
-            return false
+            return maybeTimer?.isValid ?? false
         }
     }
     
@@ -41,7 +37,7 @@ extension DefaultConditionalRepeater: ConditionalRepeater {
             repeats: true
         )
         
-        self.maybeTimerClosure = {
+        maybeTimerClosure = {
             if let closureToRepeat = maybeClosureToRepeat {
                 closureToRepeat()
             }
@@ -62,7 +58,7 @@ extension DefaultConditionalRepeater: ConditionalRepeater {
 // MARK: - Actions
 extension DefaultConditionalRepeater {
     @objc fileprivate func timerInvocation() {
-        if let closureToRepeat = self.maybeTimerClosure {
+        if let closureToRepeat = maybeTimerClosure {
             closureToRepeat()
         }
     }
