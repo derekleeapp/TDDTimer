@@ -25,13 +25,14 @@
 		52902BE61DBAEC6400055450 /* CountingRepeaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */; };
 		52902BE91DBAEC8F00055450 /* FakeSimpleRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BE81DBAEC8F00055450 /* FakeSimpleRepeater.swift */; };
 		52902BEC1DBAED2F00055450 /* DefaultRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */; };
-		52902BEE1DBAF17500055450 /* CustomMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52902BED1DBAF17500055450 /* CustomMatchers.swift */; };
 		529321CD1E5D6B9D00DC1FA9 /* UILabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */; };
 		529321CF1E5D6BAF00DC1FA9 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */; };
 		529321D11E5D6EA700DC1FA9 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */; };
 		52E74B6D1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B6C1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift */; };
 		52E74B6F1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B6E1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift */; };
 		52E74B711FCD9F0A00C23326 /* FakeConditionalRepeater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B701FCD9F0A00C23326 /* FakeConditionalRepeater.swift */; };
+		52E74B751FCDA37F00C23326 /* UIView+FindElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B731FCDA37F00C23326 /* UIView+FindElement.swift */; };
+		52E74B761FCDA37F00C23326 /* UIViewController+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E74B741FCDA37F00C23326 /* UIViewController+Testing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,13 +81,14 @@
 		52902BE51DBAEC6400055450 /* CountingRepeaterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingRepeaterViewController.swift; sourceTree = "<group>"; };
 		52902BE81DBAEC8F00055450 /* FakeSimpleRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSimpleRepeater.swift; sourceTree = "<group>"; };
 		52902BEB1DBAED2F00055450 /* DefaultRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultRepeater.swift; sourceTree = "<group>"; };
-		52902BED1DBAF17500055450 /* CustomMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMatchers.swift; sourceTree = "<group>"; };
 		529321CC1E5D6B9D00DC1FA9 /* UILabelStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStyle.swift; sourceTree = "<group>"; };
 		529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		529321D01E5D6EA700DC1FA9 /* UIFontExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		52E74B6C1FCD7A9F00C23326 /* DefaultConditionalRepeater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConditionalRepeater.swift; sourceTree = "<group>"; };
 		52E74B6E1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConditionalRepeaterTest.swift; sourceTree = "<group>"; };
 		52E74B701FCD9F0A00C23326 /* FakeConditionalRepeater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeConditionalRepeater.swift; sourceTree = "<group>"; };
+		52E74B731FCDA37F00C23326 /* UIView+FindElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FindElement.swift"; sourceTree = "<group>"; };
+		52E74B741FCDA37F00C23326 /* UIViewController+Testing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Testing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,9 +146,9 @@
 			children = (
 				525C3FB41DBAE0C8007F60A7 /* Application */,
 				525C3FB61DBAE0C8007F60A7 /* Components */,
+				52E74B721FCDA37F00C23326 /* Extensions For Test */,
 				525C3FC31DBAE7F5007F60A7 /* Frameworks */,
 				525C3FB71DBAE0C8007F60A7 /* UI */,
-				52902BED1DBAF17500055450 /* CustomMatchers.swift */,
 			);
 			path = TDDTimerTests;
 			sourceTree = "<group>";
@@ -269,6 +271,15 @@
 				529321CE1E5D6BAF00DC1FA9 /* UILabelExtensions.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		52E74B721FCDA37F00C23326 /* Extensions For Test */ = {
+			isa = PBXGroup;
+			children = (
+				52E74B731FCDA37F00C23326 /* UIView+FindElement.swift */,
+				52E74B741FCDA37F00C23326 /* UIViewController+Testing.swift */,
+			);
+			path = "Extensions For Test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,13 +423,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52902BEE1DBAF17500055450 /* CustomMatchers.swift in Sources */,
 				523BA9A21DBB18A3009788CF /* DefaultSimpleRepeaterTest.swift in Sources */,
 				52902BE91DBAEC8F00055450 /* FakeSimpleRepeater.swift in Sources */,
 				523BA9A41DBB50F4009788CF /* ExtensionsForTest.swift in Sources */,
 				52E74B711FCD9F0A00C23326 /* FakeConditionalRepeater.swift in Sources */,
 				52E74B6F1FCD7AB600C23326 /* DefaultConditionalRepeaterTest.swift in Sources */,
 				52902BE41DBAEBBE00055450 /* CountingRepeaterViewControllerTest.swift in Sources */,
+				52E74B751FCDA37F00C23326 /* UIView+FindElement.swift in Sources */,
+				52E74B761FCDA37F00C23326 /* UIViewController+Testing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

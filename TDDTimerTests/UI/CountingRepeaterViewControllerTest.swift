@@ -22,11 +22,11 @@ class CountingRepeaterViewControllerTest: QuickSpec {
 
                 describe("view elements") {
                     it("displays a header on the screen") {
-                        expect(countingRepeaterVC).to(containLabelWithText("Counting Timer Test"))
+                        expect(countingRepeaterVC.hasLabel(withText: "Counting Timer Test")).to(beTrue())
                     }
 
                     it("displays a single digit on the screen") {
-                        expect(countingRepeaterVC).to(containLabelWithText("1"))
+                        expect(countingRepeaterVC.hasLabel(withText: "1")).to(beTrue())
                     }
                 }
 
