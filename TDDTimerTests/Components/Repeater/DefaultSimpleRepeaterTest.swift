@@ -2,14 +2,13 @@ import Quick
 import Nimble
 @testable import TDDTimer
 
-class DefaultRepeaterTest: QuickSpec {
+class DefaultSimpleRepeaterTest: QuickSpec {
     override func spec() {
-        describe("the default repeater") {
+        describe("the default simple repeater") {
             it("starts the timer") {
-                let defaultRepeater = DefaultRepeater()
+                let defaultRepeater = DefaultSimpleRepeater()
                 defaultRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: nil,
                     maybeClosureToRepeat: nil
                 )
 
@@ -18,13 +17,12 @@ class DefaultRepeaterTest: QuickSpec {
             }
 
             it("invokes the closure to repeat after calling start") {
-                let defaultRepeater = DefaultRepeater()
+                let defaultRepeater = DefaultSimpleRepeater()
 
 
                 var closureWasCalled = false
                 defaultRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: nil,
                     maybeClosureToRepeat: {
                         closureWasCalled = true
                     }
@@ -36,10 +34,9 @@ class DefaultRepeaterTest: QuickSpec {
             }
 
             it("invalidates the timer when stop is invoked") {
-                let defaultRepeater = DefaultRepeater()
+                let defaultRepeater = DefaultSimpleRepeater()
                 defaultRepeater.start(
                     timeInterval: 0.01,
-                    maybeConditionToStop: nil,
                     maybeClosureToRepeat: nil
                 )
 
@@ -48,20 +45,6 @@ class DefaultRepeaterTest: QuickSpec {
 
 
                 expect(defaultRepeater.isValid).to(beFalse())
-            }
-
-            it("stops the timer automatically when the stop condition is met") {
-                let defaultRepeater = DefaultRepeater()
-                defaultRepeater.start(
-                    timeInterval: 0.01,
-                    maybeConditionToStop: {
-                        return true
-                    },
-                    maybeClosureToRepeat: nil
-                )
-
-
-                expect(defaultRepeater.isValid).toEventually(beFalse())
             }
         }
     }

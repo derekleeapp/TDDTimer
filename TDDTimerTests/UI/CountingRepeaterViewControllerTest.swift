@@ -6,12 +6,12 @@ class CountingRepeaterViewControllerTest: QuickSpec {
 
     override func spec() {
         describe("a view controller that uses an injectable repeater") {
-            var fakeRepeater: FakeRepeater!
+            var fakeRepeater: FakeConditionalRepeater!
             var countingRepeaterVC: CountingRepeaterViewController!
 
             context("when the repeater condition is valid") {
                 beforeEach {
-                    fakeRepeater = FakeRepeater()
+                    fakeRepeater = FakeConditionalRepeater()
                     countingRepeaterVC = CountingRepeaterViewController(
                         repeater: fakeRepeater,
                         maximumCountValue: 10
@@ -63,7 +63,7 @@ class CountingRepeaterViewControllerTest: QuickSpec {
 
             context("when the repeater condition is invalid") {
                 beforeEach {
-                    fakeRepeater = FakeRepeater()
+                    fakeRepeater = FakeConditionalRepeater()
                     countingRepeaterVC = CountingRepeaterViewController(
                         repeater: fakeRepeater,
                         maximumCountValue: 0

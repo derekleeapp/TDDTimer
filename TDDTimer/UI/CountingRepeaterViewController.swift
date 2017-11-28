@@ -3,7 +3,7 @@ import PureLayout
 
 class CountingRepeaterViewController: UIViewController {
     // MARK: - Properties
-    fileprivate let repeater: Repeater
+    fileprivate let repeater: ConditionalRepeater
     fileprivate let maximumCountValue: Int
     fileprivate var counterValue: Int
 
@@ -14,8 +14,9 @@ class CountingRepeaterViewController: UIViewController {
     let cancelButton: UIButton
 
     // MARK: - Initialization
-    init(repeater: Repeater,
-         maximumCountValue: Int) {
+    init(repeater: ConditionalRepeater,
+         maximumCountValue: Int)
+    {
         self.repeater = repeater
         self.maximumCountValue = maximumCountValue
 

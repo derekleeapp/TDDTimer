@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         window = UIWindow()
 
-        let repeater = DefaultRepeater()
+        let repeater = DefaultConditionalRepeater()
         let countingRepeaterViewController = CountingRepeaterViewController(
             repeater: repeater,
             maximumCountValue: 10

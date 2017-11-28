@@ -1,23 +1,22 @@
 import Foundation
 
-protocol Repeater {
+protocol SimpleRepeater {
     var isValid: Bool { get }
 
     func start(
         timeInterval: TimeInterval,
-        maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?
     )
     func stop()
 }
 
-class DefaultRepeater {
+class DefaultSimpleRepeater {
     fileprivate var maybeTimer: Timer?
     fileprivate var maybeClosureToRepeat: (() -> ())?
 }
 
 // MARK: - Repeater
-extension DefaultRepeater: Repeater {
+extension DefaultSimpleRepeater: SimpleRepeater {
     var isValid: Bool {
         get {
             if let timer = maybeTimer {
@@ -30,7 +29,6 @@ extension DefaultRepeater: Repeater {
 
     func start(
         timeInterval: TimeInterval,
-        maybeConditionToStop: (() -> Bool)?,
         maybeClosureToRepeat: (() -> ())?)
     {
         maybeTimer = Timer.scheduledTimer(
@@ -45,12 +43,6 @@ extension DefaultRepeater: Repeater {
             if let closureToRepeat = maybeClosureToRepeat {
                 closureToRepeat()
             }
-
-            if let conditionToStop = maybeConditionToStop {
-                if (conditionToStop()) {
-                    self.stop()
-                }
-            }
         }
     }
 
@@ -60,7 +52,7 @@ extension DefaultRepeater: Repeater {
 }
 
 // MARK: - Private Methods
-extension DefaultRepeater {
+extension DefaultSimpleRepeater {
     @objc fileprivate func timerInvocation() {
         if let closureToRepeat = self.maybeClosureToRepeat {
             closureToRepeat()
